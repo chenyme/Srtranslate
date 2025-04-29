@@ -39,6 +39,8 @@ pm2 start npm --name "srtranslate-frontend" --max-memory-restart 200M --restart-
 poetry install
 
 poetry run pro
+
+pm2 start start.sh --name "srtranslate-backend" --max-memory-restart 200M --restart-delay 3000 --max-restarts 3 --time
 ```
 
 <br>
